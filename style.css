@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca;
+    src: url(Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+@media (min-width: 1440px) {
+    .content{
+        width: 90%;
+        margin: auto;
+        margin-top: 65px;
+        height: 730px;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width:500px) {
+    .content{
+        width: 90%;
+        margin: auto;
+        margin-top: 65px;
+        height: 730px;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px;
+        margin-bottom: 80px;
+    }
+    
+    .insight-image{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(
+    -120deg) saturate(600%) contrast(0.8);
+    }
+    
+    .insight-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    
+    .insight-title-content{
+        margin-top: 30px;
+        font-family: LexendDeca;
+        font-weight: 400;
+        font-size: 30px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    
+    .insight-desc-content{
+        font-family: Inter;
+        color: hsla(0, 0%, 100%, 0.6);
+        line-height: 26px;
+    }
+    
+    .insight-num-title{
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+    }
+    
+    
+    .insight-num-desc{
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 10px;
+        color: hsla(0, 0%, 100%, 0.6);
+        text-transform: uppercase;
+        margin-top: 3px;
+        letter-spacing: 3px;
+    }
+}
